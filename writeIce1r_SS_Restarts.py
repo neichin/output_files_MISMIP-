@@ -30,6 +30,7 @@ for case in cases:
         else:
             path='/home/users/merino4i/MISMIP+/'+case+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
+            print filesIce
             for file1 in filesIce:
                 file1=file1
                 
