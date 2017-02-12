@@ -30,8 +30,7 @@ for case in cases:
         else:
             path='/home/users/merino4i/MISMIP+/'+case+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
-            print filesIce.sort
-            for file1 in filesIce:
+            for file1 in filesIce.sort():
                 file1=file1
                 
         reader = vtk.vtkXMLPUnstructuredGridReader()
