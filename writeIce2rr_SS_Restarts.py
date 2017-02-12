@@ -140,7 +140,7 @@ for case in cases:
         indexFile=indexFile+1
 
                 
-ncfile = netCDF4.Dataset('/home/users/merino4i/output_files_MISMIP/output_files_MISMIP-/Ice1r_SS.nc','a')
+ncfile = netCDF4.Dataset('/home/users/merino4i/output_files_MISMIP/output_files_MISMIP-/Ice2rr_SS.nc','a')
 iceVolume= ncfile.variables['iceVolume']
 iceVAF= ncfile.variables['iceVAF']
 groundedArea = ncfile.variables['groundedArea']
