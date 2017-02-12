@@ -40,12 +40,14 @@ for case in cases:
         if run==runs[0]: #First data comes from previous Run
             path='/home/users/merino4i/MISMIP+/'+caseFirst+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
+            filesIce.sort()
             for fileTest in filesIce:
                 file1=fileTest
         else:
             
             path='/home/users/merino4i/MISMIP+/'+case+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
+            filesIce.sort()
             for fileTest in filesIce:
                 file1=fileTest
 
