@@ -22,7 +22,7 @@ vBaseGL = ncfile.variables['vBaseGL']
 #vMeanGL = ncfile.variables['vMeanGL']
 
 caseFirst='Conv500m_Schoof_SSAStar'
-cases=['Test500m_Schoof_SSAStar']
+cases=['Test500m_Schoof_SSAStar_Repeated']
 runs=['Run7','Ice1r','Ice1r1','Ice1r2','Ice1r3','Ice1r4','Ice1r5','Ice1r6','Ice1r7','Ice1r8','Ice1r9']
 time=[0.0,10.0,20.0,30.0,40.0,50.0,60.0,70.0,80.0,90.0,100]
 indexCases=0

@@ -11,7 +11,7 @@ rhow=1.028
 rhoi=0.918
 
 caseFirst='Conv500m_Schoof_SSAStar'
-cases=['Test500m_Schoof_SSAStar']
+cases=['Test500m_Schoof_SSAStar_Repeated']
 runs=['Run7','Ice2r','Ice2r1','Ice2r2','Ice2r3','Ice2r4','Ice2r5','Ice2r6','Ice2r7','Ice2r8','Ice2r9']
 indexCases=0
 #Integrales
