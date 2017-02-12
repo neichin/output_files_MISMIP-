@@ -10,7 +10,7 @@ from vtk.util.numpy_support import vtk_to_numpy
 rhow=1.028
 rhoi=0.918
 
-ncfile = netCDF4.Dataset('/home/users/merino4i/output_files_MISMIP/output_files_MISMIP-/Ice1r_SS.nc','a')
+ncfile = netCDF4.Dataset('/home/users/merino4i/output_files_MISMIP/output_files_MISMIP-/Ice1r.nc','a')
 xGL= ncfile.variables['xGL']
 yGL= ncfile.variables['yGL']
 iceThicknessGL = ncfile.variables['iceThicknessGL']
