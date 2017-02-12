@@ -10,7 +10,7 @@ from vtk.util.numpy_support import vtk_to_numpy
 rhow=1.028
 rhoi=0.918
 
-ncfile = netCDF4.Dataset('/Users/imerino/Documents/These/MISMIP+/Outputs/Write_Output_From_VTK/Ice1r_SS.nc','a')
+ncfile = netCDF4.Dataset('/home/users/merino4i/output_files_MISMIP/output_files_MISMIP-/Ice1r_SS.nc','a')
 xGL= ncfile.variables['xGL']
 yGL= ncfile.variables['yGL']
 iceThicknessGL = ncfile.variables['iceThicknessGL']
@@ -38,18 +38,18 @@ for case in cases:
     for run in runs:
         indexFile=0
         if run==runs[0]: #First data comes from previous Run
-            path='/Users/imerino/Documents/These/MISMIP+/Occigen/'+caseFirst+'/'+run+'/'
+            path='/home/users/merino4i/MISMIP+/'+caseFirst+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
             for fileTest in filesIce:
                 file1=fileTest
         else:
-            reader = vtk.vtkXMLPUnstructuredGridReader()
-            path='/Users/imerino/Documents/These/MISMIP+/Occigen/'+case+'/'+run+'/'
+            
+            path='/home/users/merino4i/MISMIP+/'+case+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
             for fileTest in filesIce:
                 file1=fileTest
 
-
+        reader = vtk.vtkXMLPUnstructuredGridReader()
         print file1
         reader.SetFileName(file1)
         reader.Update()

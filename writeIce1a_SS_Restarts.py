@@ -25,12 +25,12 @@ for case in cases:
     for run in runs:
         indexFile=0
         if run==runs[0]: #First data comes from previous Run
-            path='/Users/imerino/Documents/These/MISMIP+/Occigen/'+caseFirst+'/'+run+'/'
+            path='/home/users/merino4i/MISMIP+/'+caseFirst+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
             for file1 in filesIce:
                 file1=file1
         else:
-            path='/Users/imerino/Documents/These/MISMIP+/Occigen/'+case+'/'+run+'/'
+            path='/home/users/merino4i/MISMIP+/'+case+'/'+run+'/'
             filesIce=glob.glob(path+'*.pvtu')
             for file1 in filesIce:
                 file1=file1
@@ -138,7 +138,7 @@ for case in cases:
         indexFile=indexFile+1
 
                 
-ncfile = netCDF4.Dataset('/Users/imerino/Documents/These/MISMIP+/Outputs/Write_Output_From_VTK/Ice1r.nc','a')
+ncfile = netCDF4.Dataset('/home/users/merino4i/output_files_MISMIP/output_files_MISMIP-/Ice1r.nc','a')
 iceVolume= ncfile.variables['iceVolume']
 iceVAF= ncfile.variables['iceVAF']
 groundedArea = ncfile.variables['groundedArea']
