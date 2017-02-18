@@ -21,7 +21,7 @@ vBaseGL = ncfile.variables['vBaseGL']
 #uMeanGL = ncfile.variables['uMeanGL']
 #vMeanGL = ncfile.variables['vMeanGL']
 
-caseFirst='Conv500m_Schoof_SSAStar_Repeated'
+caseFirst='Conv500m_Schoof_SSAStar'
 cases=['Test500m_Schoof_SSAStar_Repeated']
 runs=['Ice1r9','Ice1a','Ice1a1','Ice1a2','Ice1a3','Ice1a4','Ice1a5','Ice1a6','Ice1a7','Ice1a8','Ice1a9',
         'Ice1a10','Ice1a11','Ice1a12','Ice1a13','Ice1a14','Ice1a15','Ice1a16','Ice1a17']
